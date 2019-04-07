@@ -1,0 +1,23 @@
+[
+{
+"sid" : "1",
+"sname": "meera",
+"gender":"female"
+},
+{
+"sid" : "2",
+"sname": "Ameera",
+"gender":"female"
+},
+{
+"sid" : "3",
+"sname": "Ameer",
+"gender":"male"
+},
+
+{
+"sid" : "4",
+"sname": "meeran",
+"gender":"male"
+}
+]
