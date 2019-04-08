@@ -7,25 +7,25 @@ import android.widget.TextView;
 
 import com.example.json.Modal.Student;
 
-public class Result_Display extends AppCompatActivity {
+public class Main2Activity extends AppCompatActivity {
+
     private TextView rsid;
     private TextView rsname;
     private TextView rsgender;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_display);
+        setContentView(R.layout.activity_main2);
+        rsgender=findViewById(R.id.rsgender);
         rsid=findViewById(R.id.rsid);
         rsname=findViewById(R.id.rsname);
-        rsgender=findViewById(R.id.rsgender);
+
         Intent i=getIntent();
         Student studobj = (Student) i.getExtras().getSerializable("stud");
         rsid.setText("StudentID:"+studobj.getSid());
 
         rsname.setText("StudentName:"+studobj.getSname());
         rsgender.setText("Gender:"+studobj.getGender());
-
-
     }
 }
-

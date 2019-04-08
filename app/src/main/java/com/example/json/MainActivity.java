@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Student stud = studentArrayList.get(position);
-                Intent mIntent=new Intent(MainActivity.this,Result_Display.class);
+                Intent mIntent=new Intent(MainActivity.this,Main2Activity.class);
                 mIntent.putExtra("stud",stud);
                 startActivity(mIntent);
             }
